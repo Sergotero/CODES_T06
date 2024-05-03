@@ -1,7 +1,15 @@
 package cuentas;
+/**
+ * 
+ * @author Sergio Otero
+ */
 
 public class Main {
 
+    /**
+     * Método que ejecuta el código.
+     * @param args son las líneas de código que se van a ejecutar.
+     */
     public static void main(String[] args) {
         CCuenta cuenta1;
         double saldoActual;
@@ -13,6 +21,11 @@ public class Main {
         operativa_cuenta(cuenta1, 0);
     }
 
+    /**
+     * Método que combina dos métodos: uno de ingreso y otro de retirada de dinero.
+     * @param cuenta1 es un objeto de tipo CCuenta.
+     * @param cantidad float con el valor que va a ser usado.
+     */
     public static void operativa_cuenta(CCuenta cuenta1, float cantidad) {
         try {
             cuenta1.retirar(2300);
